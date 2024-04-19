@@ -1,0 +1,102 @@
+# 公共配置文件
+spring:
+  application:
+    name: artboy-generator-web-backEnd
+  # 默认 dev 环境
+  profiles:
+    active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  # session 配置
+  session:
+    store-type: redis
+    # 30 天过期
+    timeout: 2592000
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/code_generate
+    username: root
+    password: root
+  # Redis 配置
+    redis:
+      database: 1
+      host: localhost
+      port: 6379
+      timeout: 5000
+  #    password: 123456
+  # 文件上传
+  servlet:
+    multipart:
+      # 大小限制
+      max-file-size: 100MB
+      max-request-size: 100MB
+  # 邮箱服务
+  mail:
+    host: smtp.qq.com     #默认平台服务地址无需更改
+    username: xxxxx@qq.com   #自己邮箱号
+    password: xxxxx    #POP3/SMTP服务授权码
+    default-encoding: utf-8 #改编码格式
+    protocol: smtp
+    port: 25 #端口号
+    properties:
+      mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+server:
+  address: localhost
+  port: 29999
+  servlet:
+    context-path: /api
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDelete # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值（默认为 1）
+      logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）
+# 接口文档配置
+knife4j:
+  enable: true
+  openapi:
+    title: "接口文档"
+    version: 1.0
+    group:
+      default:
+        api-rule: package
+        api-rule-resources:
+          - com.artboy.web.controller
+
+# xxl-job 配置
+xxl:
+  job:
+    admin:
+      # xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    # xxl-job, access token
+    accessToken: default_token
+    executor:
+      # xxl-job executor appname
+      appname: azhang-generator-web-backend
+      # xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
+      address:
+      # xxl-job executor server-info
+      ip:
+      port: 9999
+      # xxl-job executor log-path
+      logpath: logs/jobhandler
+      # xxl-job executor log-retention-days
+      logretentiondays: 30
+
+# 对象存储
+cos:
+  client:
+    accessKey: xxxxx
+    secretKey: xxxxx
+    region: xxxxx
+    bucket: xxxxx

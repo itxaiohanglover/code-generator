@@ -1,0 +1,21 @@
+{
+  "id": 7,
+  "fileConfig": {
+    "files": [
+      {
+        "path": ""
+      }
+    ]
+  },
+  "modelConfig": {
+    "models": [
+      {
+        "fieldName": "title",
+        "type": "String",
+        "description": "数据大屏标题",
+        "defaultValue": "可视化大屏标题",
+        "replaceText": "生意参谋大数据可视化HTML模板"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": 4,
+  "fileConfig": {
+    "files": [
+      {
+        "path": ""
+      }
+    ]
+  },
+  "modelConfig": {
+    "models": [
+      {
+        "fieldName": "name",
+        "type": "String",
+        "description": "姓名",
+        "defaultValue": "artboy",
+        "replaceText": "蜗牛快跑"
+      },
+      {
+        "fieldName": "email",
+        "type": "String",
+        "description": "邮箱",
+        "defaultValue": "1531137510@gmail.com",
+        "replaceText": "snailrun160@gmail.com"
+      },
+      {
+        "fieldName": "phone",
+        "type": "String",
+        "description": "手机号",
+        "defaultValue": "15234390329",
+        "replaceText": "19558247241"
+      },
+      {
+        "fieldName": "birthday",
+        "type": "String",
+        "description": "出生日期",
+        "defaultValue": "2001-10-20",
+        "replaceText": "2000-01-04"
+      }
+    ]
+  }
+}

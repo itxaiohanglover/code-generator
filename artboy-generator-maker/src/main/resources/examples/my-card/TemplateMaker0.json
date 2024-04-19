@@ -1,0 +1,10 @@
+{
+  "id": 4,
+  "meta": {
+    "name": "my-card",
+    "description": "个人明信片",
+    "forcedInteractiveSwitch": true,
+    "versionControl": true
+  },
+  "originProjectPath": "../../../demo-projects/my-card-template"
+}

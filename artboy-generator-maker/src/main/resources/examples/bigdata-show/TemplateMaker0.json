@@ -1,0 +1,10 @@
+{
+  "id": 7,
+  "meta": {
+    "name": "bigdata-show-template",
+    "description": "大数据分析大屏",
+    "forcedInteractiveSwitch": true,
+    "versionControl": true
+  },
+  "originProjectPath": "../../../demo-projects/bigdata-show-template"
+}

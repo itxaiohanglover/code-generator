@@ -1,0 +1,89 @@
+{
+    "name": "my-card",
+    "description": "个人明信片",
+    "author": "artboy",
+    "createTime": "2024-4-14",
+    "forcedInteractiveSwitch": false,
+    "versionControl": false,
+    "fileConfig": {
+        "sourceRootPath": "C:/Users/artboy/Desktop/四川华迪/毕设/code/code-generator/azhang-generator-maker/src/main/resources/examples/my-card/my-card-template",
+        "files": [
+            {
+                "inputPath": "assets/images/logo.svg",
+                "outputPath": "assets/images/logo.svg",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "assets/images/logo.ico",
+                "outputPath": "assets/images/logo.ico",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "assets/images/icon-dev.svg",
+                "outputPath": "assets/images/icon-dev.svg",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "index.html.ftl",
+                "outputPath": "index.html",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "assets/js/script.js",
+                "outputPath": "assets/js/script.js",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "assets/css/style.css",
+                "outputPath": "assets/css/style.css",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "assets/images/my-avatar.png",
+                "outputPath": "assets/images/my-avatar.png",
+                "type": "file",
+                "generateType": "static"
+            },
+            {
+                "inputPath": "assets/images/icon-app.svg",
+                "outputPath": "assets/images/icon-app.svg",
+                "type": "file",
+                "generateType": "static"
+            }
+        ]
+    },
+    "modelConfig": {
+        "models": [
+            {
+                "fieldName": "birthday",
+                "type": "String",
+                "description": "出生日期",
+                "defaultValue": "2001-10-20"
+            },
+            {
+                "fieldName": "phone",
+                "type": "String",
+                "description": "手机号",
+                "defaultValue": "15234390329"
+            },
+            {
+                "fieldName": "name",
+                "type": "String",
+                "description": "姓名",
+                "defaultValue": "artboy"
+            },
+            {
+                "fieldName": "email",
+                "type": "String",
+                "description": "邮箱",
+                "defaultValue": "1531137510@gmail.com"
+            }
+        ]
+    }
+}

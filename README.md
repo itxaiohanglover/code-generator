@@ -12,11 +12,11 @@
 6. 后端将代码返回给用户下载
 7. 清除下载的资源 防止磁盘满溢
 
-![image-20240418123702012](C:/Users/artboy/AppData/Roaming/Typora/typora-user-images/image-20240418123702012.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/17a0232ed70c412bb4f3a8a9f53bece0.png)
 
 **模板制作工具：**
 
-![image-20240418124058163](C:/Users/artboy/AppData/Roaming/Typora/typora-user-images/image-20240418124058163.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/direct/668a9468ae8c4ef6a66e94e6e9274e3f.png)
 
 1. 基本信息：需要制作的代码生成器的基本信息，对应元信息的名称 描述 版本号 作者等信息
 
